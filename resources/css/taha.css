@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'taha';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./fonts/taha/ttf/QuranTaha.ttf') format('truetype');
+}
+
+.taha-normal{
+	font-family: taha!important;
+	font-weight: normal!important;
+}
