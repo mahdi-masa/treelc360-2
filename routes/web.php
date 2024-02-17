@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CampainController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -63,6 +64,8 @@ Route::get('/test', function () {
     return view('Pages/form');
 })->name('test');
 
+
+Route::post('/campain/submit', [CampainController::class, 'submit'])->name('campain-submit');
 
 
 
