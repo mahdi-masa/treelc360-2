@@ -60,7 +60,7 @@ Route::get('/cutting-season', function () {
 })->name('cutting-season');
 
 Route::get('/test', function () {
-    return view('Pages/landing2');
+    return view('Pages/form');
 })->name('test');
 
 
