@@ -26,7 +26,7 @@
         </div>
     @endif
     </div>
-    <form action="{{ route('campain-submit') }}" method="POST">
+    <form action="{{ route('campain-submit') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mt-[20px] m-2">
             <div class="max-w-[500px] mx-auto">

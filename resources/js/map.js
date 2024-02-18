@@ -524,27 +524,7 @@ function loadTrees(map)
             );
         });
 
-        // map.on('click', 'unclustered-point', (e) => {
-        //     const coordinates = e.features[0].geometry.coordinates.slice();
-        //     console.log(PlantTypes);
-        //     const plant_type = PlantTypes.value.find(plant => plant.slug === e.features[0].properties.type)?.name || 'سایر';
-        //     const count = e.features[0].properties.count;
-        //     const created_at = new Intl.DateTimeFormat('fa-IR', {dateStyle: 'short'}).format(new Date(e.features[0].properties.created_at))
-        //     const phone = toPersianDigits(e.features[0].properties.user_phone);
-        //     const name = e.features[0].properties.user_name ?? 'کاربر';
-        //     // Ensure that if the map is zoomed out such that
-        //     // multiple copies of the feature are visible, the
-        //     // popup appears over the copy being pointed to.
-        //     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        //     }
-            
-        //     popup.setLngLat(coordinates)
-        //         .setHTML(
-        //         `اهدا  شده به زمین توسط ${name} <br>نوع: ${plant_type}<br>تعداد: ${count} اصله<br>تاریخ کاشت: ${created_at}<br>شماره تماس: <div style="direction: ltr; display: inline-block" > ${phone}</div>`
-        //         )
-        //         .addTo(map)
-        // });
+        
         function toPersianDigits(str) {
           const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
           const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -571,7 +551,17 @@ function loadTrees(map)
           
           popup.setLngLat(coordinates)
               .setHTML(
-             ` اهدا  شده به زمین توسط ${name} <br>نوع: ${plant_type}<br>تعداد: ${count} اصله<br>تاریخ کاشت: ${created_at}<br>شماره تماس: <div class="iransans-normal sansnum-normal" style="direction: ltr; display: inline-block" > ${phone}</div>`
+                `<div class="iransans-normal sansnum-normal">
+                نوع: ${plant_type}
+                <br>
+                تاریخ کاشت: ${created_at}
+                <br>
+                شماره تماس: 
+                <div class="inline-block" style="direction:ltr; display: inline-block;">
+                ${phone}
+                </div>
+                <br>
+                </div>`
               )
               .addTo(map)
         });
