@@ -67,7 +67,7 @@
                                     <label class="iransans-normal text-[13px]" for="campain-start-date">شروع پویش:</label>
                                 </div>
                                 <div>
-                                    <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] cursor-pointer @error('start-date') border-red-500 @else border-black @enderror" name="start-date" placeholder="تاریخ شروع" data-jdp>
+                                    <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] cursor-pointer @error('start-date') border-red-500 @else border-black @enderror" name="start-date" placeholder="تاریخ شروع" data-jdp value="{{ old('start-date') }}">
                                     
                                     @error('start-date')
                                         <span class="text-[10px] text-red-500">{{ $message }}</span>
@@ -80,7 +80,7 @@
                                     <label class="iransans-normal text-[13px]" for="campain-end-date">خاتمه پویش:</label>
                                 </div>
                                 <div>
-                                    <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] cursor-pointer @error('start-date') border-red-500 @else border-black @enderror" name="finish-date" placeholder="تاریخ خاتمه" data-jdp>
+                                    <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] cursor-pointer @error('start-date') border-red-500 @else border-black @enderror" name="finish-date" placeholder="تاریخ خاتمه" data-jdp value="{{ old('finish-date') }}">
                                     @error('finish-date')
                                         <span class="text-[10px] text-red-500">{{ $message }}</span>
                                     @enderror
@@ -109,8 +109,12 @@
                                         <span class="iransans-normal text-[13px]">تصویر پویش:</span>
                                     </div>
                                     <div>
-                                        <label class="iransans-normal text-[13px] bg-[#ffDE0D] p-2 rounded-[5px] cursor-pointer" for="campain-picture">بارگذاری پوستر</label>
-                                        <input class="text-[13px] iransans-normal border-2 w-full h-[40px] border-black rounded-[8px] mt-[3px] ps-[4px] pt-[3px]" type="file" id="campain-picture" name="campain-picture" placeholder="صبح زیتون" hidden>
+                                        {{-- <label class="iransans-normal text-[13px] bg-[#ffDE0D] p-2 rounded-[5px] cursor-pointer" for="campain-picture">بارگذاری پوستر</label> --}}
+                                        {{-- <input class="text-[13px] iransans-normal border-2 w-full h-[40px] border-black rounded-[8px] mt-[3px] ps-[4px] pt-[3px]" type="file" id="campain-picture" name="campain-picture" placeholder="صبح زیتون" hidden> --}}
+                                        <input class="text-left" type="file" name="campain-poster">
+                                        @error('campain-poster')
+                                            <span class="text-[10px] text-red-500">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +152,7 @@
                                 <label class="iransans-normal text-[13px]" for="firstname">نام:</label>
                             </div>
                             <div>
-                                <input class="text-[13px] iransans-normal border-2 w-full h-[40px] border-black rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-firstname') border-red-500 @else border-black @enderror" type="text" id="firstname" name="leader-firstname" placeholder="محمد">
+                                <input class="text-[13px] iransans-normal border-2 w-full h-[40px] border-black rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-firstname') border-red-500 @else border-black @enderror" type="text" id="firstname" name="leader-firstname" placeholder="محمد" value="{{ old('leader-firstname') }}">
                                 @error('leader-firstname')
                                     <span class="text-[10px] text-red-500">{{ $message }}</span>
                                 @enderror
@@ -160,7 +164,7 @@
                                 <label class="iransans-normal text-[13px]" for="lastname">نام خانوادگی:</label>
                             </div>
                             <div>
-                                <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-lastname') border-red-500 @else border-black @enderror" type="text" id="lastname" name="leader-lastname" placeholder="محمدی">
+                                <input class="text-[13px] iransans-normal border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-lastname') border-red-500 @else border-black @enderror" type="text" id="lastname" name="leader-lastname" placeholder="محمدی" value="{{ old('leader-lastname') }}">
                                 @error('leader-lastname')
                                     <span class="text-[10px] text-red-500">{{ $message }}</span>
                                 @enderror
@@ -172,7 +176,7 @@
                                 <label class="iransans-normal text-[13px]" for="phone">شماره تلفن:</label>
                             </div>
                             <div>
-                                <input class="text-[13px] border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-phone') border-red-500 @else border-black @enderror" type="text" id="phone" name="leader-phone" placeholder="09131234567">
+                                <input class="text-[13px] border-2 w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] @error('leader-phone') border-red-500 @else border-black @enderror" type="text" id="phone" name="leader-phone" placeholder="09131234567" value="{{ old('leader-phone') }}">
                                 @error('leader-phone')
                                     <span class="text-[10px] text-red-500">{{ $message }}</span>
                                 @enderror
