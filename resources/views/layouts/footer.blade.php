@@ -1,4 +1,4 @@
-<footer class="mt-5">
+<footer>
 
     <div class="bg-[#3f8155] p-4 footerbackground" id="footer">
         <div class="text-center mx-auto mobile:w-full">

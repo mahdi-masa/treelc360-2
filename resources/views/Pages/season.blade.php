@@ -66,10 +66,10 @@
                         </div>
 
                         <div class="w-1/3 mx-auto">
-                            <a href="{{route("palestine")}}">
-                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="/assets/pages/sessions/palestine-gray.png" alt="">
+                            <a href="#">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/layouts/landing/sessionhistory.svg" alt="">
                             </a>
-                            <a href="{{route("palestine")}}">
+                            <a href="#">
                                 <p class="text-black text-center iransans-600 my-5">پویش خود را ثبت کن</p>
                             </a>
                         </div>
