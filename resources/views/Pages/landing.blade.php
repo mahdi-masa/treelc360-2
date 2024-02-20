@@ -34,7 +34,7 @@
                     </p>
                     <p class="text-center text-black iransans-500 mt-1 text-base mobile:text-[12px]">او شما را از زمیـن پدید آورد و آبادگران آن قرار داد.</p>
                 </div>
-                <div class="tablet:flex flex-row justify-end mt-[10px]">
+                <div class="tablet:flex flex-row mobile:hidden pc:block justify-end mt-[10px]">
                     <img class="mobile:w-[280px] tablet:w-full pc:w-[85%] mx-auto" src="assets/layouts/landing/mainlogo.svg" alt="">
                 </div>
             </div>
@@ -43,37 +43,34 @@
                     
                 </div>
             </div>
-            
         </div>
-        <div class="flex flex-row justify-between items-center my-5">
-            <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span class="mobile:text-[13px]">هسته‌های خود‌جوش</span>
+        <div class="flex flex-row mobile:justify-between mobile:max-w-[400px] pc:max-w-none tablet:max-w-none pc:justify-evenly mx-auto items-center my-5">
+            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+                <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">هسته‌های خود‌جوش</span>
                 <div>
-                    <span class="mobile:text-[13px] sansnum-normal" id="squads">0</span>
-                    <span class="mobile:text-[13px]">عدد</span>
+                    <span class="mobile:text-[13px] text-[#009245] sansnum-normal" id="squads">0</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">گروه</span>
                 </div>
             </div>
-            <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span class="mobile:text-[13px]">آبادگران زمین</span>
+            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+                <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">آبادگران زمین</span>
                 <div>
-                    <span class="mobile:text-[13px] sansnum-normal" id="members">0</span>
-                    <span class="mobile:text-[13px]">نفر</span>
+                    <span class="mobile:text-[13px] text-[#009245] sansnum-normal" id="members">0</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">نفر</span>
                 </div>
             </div>
-            <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span class="mobile:text-[13px]">درختان اهدا شده به زمین</span>
+            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+                <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">درختان اهدا شده به زمین</span>
                 <div>
-                    <span class="me-1 mobile:text-[13px] sansnum-normal" id="trees">0</span>
-                    <span class="mobile:text-[13px]">عدد</span>
-
+                    <span class="me-1 mobile:text-[13px] text-[#009245] sansnum-normal" id="trees">0</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">عدد</span>
                 </div>
             </div>
         </div>
         {{-- start icons and their content --}}
         <div class="flex justify-between items-baseline mobile:flex-col tablet:flex-row mobile:w-full mobile:mr-0 pc:mr-[15px] mt-[20px]">
-
-                <div class="w-full mobile:max-w-[68%] mx-auto flex flex-row justify-center items-baseline tablet:basis-[40%]">
-                    <div class="text-center basis-1/5 mobile:basis-1/2 mobile:p-[5px] pc:pt-0 mobile:max-w-fit tablet:max-w-none mobile:mx-auto tablet:m-0">
+                <div class="w-full mx-auto flex flex-row justify-center items-baseline pc:basis-[60%] tablet:basis-[60%]">
+                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px] pc:pt-0  tablet:max-w-none mobile:mx-auto tablet:m-0">
                         <div class="mb-[10px]">
                             <a href="https://forms.lc360.ir/login">
                                 <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/Registration-details.svg" alt="">
@@ -82,43 +79,15 @@
                         <div class="mobile:mt-[10px] tablet:m-0">
                             <a href="https://forms.lc360.ir/login">
                                 
-                                <p class="text-center iransans-500 text-[13px]">
-                                    <span class="text-center iransans-500 text-[13px]">ورود</span>
-                                    <p class="text-center iransans-500 text-[10px]">برای نجات زمین و چرخه حیات آماده‌ای؟!</p>
+                                <p class="text-center">
+                                    <p class="text-center iransans-500 mobile:text-[13px] pc:text-[15px]">ورود</p>
+                                    <p class="text-center iransans-500 mobile:text-[10px] pc:text-[13px]">برای نجات زمین و چرخه حیات آماده‌ای؟!</p>
                                 </p>
                             </a>
                         </div>
                     </div>
-    
-                    <div class="text-center basis-1/5 mobile:basis-1/2 mobile:p-[5px] pc:pt-0 mobile:max-w-fit tablet:max-w-none mobile:mx-auto tablet:m-0">
-                        <div class="mb-[10px]">
-                            <a href="https://forms.lc360.ir/forms/plant">
-                                <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/Tree-registration.svg" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://forms.lc360.ir/forms/plant">
-                                <p class="text-center iransans-500 text-[13px]">ثبت کاشته‌ها</p>
-                                <p class="text-center iransans-500 text-[10px]">یادگارهای سبز خود را کجا کاشتی؟</p>
-                            </a>
-                        </div>                    
-                    </div>
-                </div>
-                
-                <div class="w-full flex flex-row justify-between items-baseline tablet:basis-[60%]">
-                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px] mobile:max-w-fit mobile:mx-auto tablet:max-w-none tablet:m-0">
-                        <div class="mb-[10px]">
-                            <a href="{{route('booklet')}}">
-                                <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/booklet.svg" alt="دانلود کتابچه‌های اموزشی نهضت درخت">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="{{route('booklet')}}">
-                                <p class="text-center iransans-500 text-[13px]">بسته‌های آموزشی</p>
-                            </a>
-                        </div>                    
-                    </div>
-                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px] mobile:max-w-fit mobile:mx-auto tablet:max-w-none tablet:m-0">
+
+                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px]  mobile:mx-auto tablet:max-w-none tablet:m-0">
                         <div class="mb-[10px]">
                             <a href="{{route('seasons')}}">
                                 <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/sessionhistory.svg" alt="">
@@ -126,12 +95,42 @@
                         </div>
                         <div>
                             <a href="{{route('seasons')}}">
-                                <p class="text-center iransans-500 text-[13px] "> فصل‌ها و طرح‌ها</p>
+                                <p class="text-center iransans-500 mobile:text-[13px] pc:text-[15px]">حرکت</p>
+                                <p class="text-center iransans-500 mobile:text-[10px] pc:text-[13px]">در پویشی شرکت کن یا طراح پویش جدید باش!</p>
                             </a>
                         </div>                    
                     </div>
     
-                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px] mobile:max-w-fit mobile:mx-auto tablet:max-w-none tablet:m-0">
+                    <div class="text-center basis-1/5 mobile:basis-1/3 mobile:p-[5px] pc:pt-0  tablet:max-w-none mobile:mx-auto tablet:m-0">
+                        <div class="mb-[10px]">
+                            <a href="https://forms.lc360.ir/forms/plant">
+                                <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/Tree-registration.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://forms.lc360.ir/forms/plant">
+                                <p class="text-center iransans-500 text-[13px] pc:text-[15px]">ثبت کاشته‌ها</p>
+                                <p class="text-center iransans-500 text-[10px] pc:text-[13px]">یادگارهای سبز خود را کجا کاشتی؟</p>
+                            </a>
+                        </div>                    
+                    </div>
+                </div>
+                
+                <div class="w-full flex flex-row justify-between items-baseline mobile:w-[66%] mx-auto pc:basis-[40%] tablet:basis-[40%]">
+                    <div class="text-center basis-1/5 mobile:basis-1/2 mobile:p-[5px] mobile:max-w-fit mobile:mx-auto tablet:max-w-none tablet:m-0">
+                        <div class="mb-[10px]">
+                            <a href="{{route('booklet')}}">
+                                <img class="mobile:w-[100px] tablet:w-[85px] mx-auto" src="assets/layouts/landing/booklet.svg" alt="دانلود کتابچه‌های اموزشی نهضت درخت">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{{route('booklet')}}">
+                                <p class="text-center iransans-500 text-[13px] pc:text-[15px]">بسته‌های آموزشی</p>
+                            </a>
+                        </div>                    
+                    </div>
+                    
+                    <div class="text-center basis-1/5 mobile:basis-1/2 mobile:p-[5px] mobile:max-w-fit mobile:mx-auto tablet:max-w-none tablet:m-0">
                         <div class="mb-[10px]">
                             <a href="https://forms.lc360.ir/forms/donate/plant">
                                 <img class="mobile:w-[100px] tablet:w-[85px] mx-auto tablet:h-[85px]" src="./assets/layouts/landing/plants-donation.svg" alt="پویش حمایت از فلسطین">
@@ -139,13 +138,11 @@
                         </div>
                         <div>
                             <a href="https://forms.lc360.ir/forms/donate/plant">
-                                <p class="text-center iransans-500 text-[13px]">اهداء نهال</p>
+                                <p class="text-center iransans-500 text-[13px] pc:text-[15px]">اهداء نهال</p>
                             </a>
                         </div>
                     </div>
-
                 </div>
-      
             </div>
                 
         </div>
