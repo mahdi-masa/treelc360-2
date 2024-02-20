@@ -541,6 +541,7 @@ function loadTrees(map)
           const count = e.features[0].properties.count;
           const created_at = new Intl.DateTimeFormat('fa-IR', {dateStyle: 'short'}).format(new Date(e.features[0].properties.created_at))
           const phone = toPersianDigits(e.features[0].properties.user_phone);
+          const stage_fa = e.features[0].properties.stage_fa;
           const name = e.features[0].properties.user_name ?? 'کاربر';
           // Ensure that if the map is zoomed out such that
           // multiple copies of the feature are visible, the
@@ -552,7 +553,11 @@ function loadTrees(map)
           popup.setLngLat(coordinates)
               .setHTML(
                 `<div class="iransans-normal sansnum-normal">
-                نوع: ${plant_type}
+                اهدا شده به زمین توسط ${name}
+                <br>
+                نوع: ${stage_fa} ${plant_type}
+                <br>
+                تعداد: ${count} عدد
                 <br>
                 تاریخ کاشت: ${created_at}
                 <br>

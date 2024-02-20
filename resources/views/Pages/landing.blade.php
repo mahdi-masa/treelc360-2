@@ -10,13 +10,15 @@
     @vite('resources/css/taha.css')
     @vite('resources/css/fontirannum.css')
     <style>
-        .wm-container{
+        div.wm-container{
             display: none!important;
-
         }
         .mapboxgl-popup-close-button{
             right: 3px!important;
             top: -2px!important;
+        }
+        .control.map-type-control{
+            display: none!important;
         }
     </style>
 @endsection

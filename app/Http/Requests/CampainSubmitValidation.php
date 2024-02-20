@@ -25,12 +25,12 @@ class CampainSubmitValidation extends FormRequest
             'leader-firstname' => 'required|string|max:40',
             'leader-lastname' => 'required|string|max:40',
             'leader-phone' => 'required|phone:IR',
-            'description' => 'string',
-            'name' => 'required|string|max:40',
-            'start-date' => 'date_format:Y/m/d|required_with:finish-date',
-            'finish-date' => 'date_format:Y/m/d|required_with:start-date|after:start-date',
-            'geometry-location' => 'string|max:70',
-            'campain-poster' => 'mimetypes:image/png,image/jpeg,application/pdf',
+            'description' => 'nullable|string',
+            'campain-name' => 'required|string|max:40',
+            'start-date' => 'nullable|date_format:Y/m/d|required_with:finish-date',
+            'finish-date' => 'nullable|date_format:Y/m/d|required_with:start-date|after:start-date',
+            'geometry-location' => 'nullable|string|max:70',
+            'campain-poster' => 'nullable|mimes:png,jpeg,pdf|file',
             
 
         ];

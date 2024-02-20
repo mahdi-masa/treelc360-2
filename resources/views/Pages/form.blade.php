@@ -17,7 +17,11 @@
     
     <div class="max-w-[500px] mx-auto bg-[#3f8055] p-2 rounded-[5px] my-2">
         <div class="text-center iransans-bold text-white">
-            <p>{{ session('status') }}</p>
+            @if (session('status') == 'false')
+            <p>ثبت پویش با مشکل مواجه شده است</p> 
+            @elseif(session('status') == 'true')
+            <p>پویش با موفقیت ثبت شد.</p>
+            @endif
         </div>
         <div class="text-right text-white">
             <a class="iransans-bold text-[15px]" href="{{route('landing')}}">
@@ -56,8 +60,8 @@
                                     <label class="iransans-normal text-[13px] text-[#94a3b8]" for="campain-name">نام پویش:</label>
                                 </div>
                                 <div>
-                                    <input class="text-[13px] iransans-normal border-[1px] rounded-[8px] w-full h-[40px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('name') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-name" name="name" value="{{ old('name')}}">
-                                    @error('name')
+                                    <input class="text-[13px] iransans-normal border-[1px] rounded-[8px] w-full h-[40px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('name') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-name" name="campain-name" value="{{ old('campain-name')}}">
+                                    @error('campain-name')
                                         <span class="text-[10px] text-red-500">{{ $message }}</span>
                                     @enderror
                                 </div>

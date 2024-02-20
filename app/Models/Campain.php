@@ -18,7 +18,7 @@ class Campain extends Model
         'finish-date',
         'description',
         'geometry-location',
-        'name',
+        'campain-name',
     ];
 
     protected $table = 'campain';
