@@ -60,20 +60,17 @@ Route::get('/cutting-season', function () {
     return view('Pages/cutting-season');
 })->name('cutting-season');
 
-Route::get('/test', function () {
-    return view('Pages/form');
-})->name('test');
 
-Route::get('/testapi', function () {
-    return view('Pages/landing2');
-})->name('testapi');
 
 Route::get('/campain', function () {
     return view('Pages/form');
 })->name('campain');
 
 
+
+
 Route::post('/campain/submit', [CampainController::class, 'submit'])->name('campain-submit');
+
 
 
 

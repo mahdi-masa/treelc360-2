@@ -13,7 +13,6 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/datepicker.js',
                 'resources/js/statistic.js',
-                'resources/js/stat2.js',
             ],
             refresh: true,
         }),

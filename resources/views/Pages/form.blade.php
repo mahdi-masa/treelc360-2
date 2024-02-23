@@ -13,23 +13,31 @@
 @endsection
 @section('content')
 <main class="bg-[#f8fafc]">
-    @if (session('status'))
     
-    <div class="max-w-[500px] mx-auto bg-[#3f8055] p-2 rounded-[5px] my-2">
-        <div class="text-center iransans-bold text-white">
-            @if (session('status') == 'false')
-            <p>ثبت پویش با مشکل مواجه شده است</p> 
-            @elseif(session('status') == 'true')
-            <p>پویش با موفقیت ثبت شد.</p>
-            @endif
-        </div>
-        <div class="text-right text-white">
-            <a class="iransans-bold text-[15px]" href="{{route('landing')}}">
-                بازگشت به خانه
-            </a>
+    @if (session('status') == 'true')
+        <div class="mx-auto max-w-[500px]">
+            <div class="w-[95%] bg-[#3f8055] p-2 rounded-[5px] my-2 mx-auto">
+                    
+                <div class="text-center iransans-bold text-white">
+                    <p class="text-[15px]">پویش با موفقیت ثبت گردید.</p> 
+                </div>
+                
+            </div>
         </div>
     @endif
-    </div>
+    @if (session('status') == 'false')
+        <div class="mx-auto max-w-[500px]">
+            <div class="w-[95%] bg-red-400 p-2 rounded-[5px] my-2 mx-auto">
+                    
+                <div class="text-center iransans-bold text-white">
+                    <p class="text-[15px]">ثبت پویش با مشکل مواجه شده است.</p> 
+                </div>
+                
+            </div>
+        </div>
+    @endif
+    
+    
     <form class="mb-5" action="{{ route('campain-submit') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mt-[20px] m-2">
@@ -178,9 +186,10 @@
                                 <label class="iransans-normal text-[13px] text-[#94a3b8]" for="phone">شماره تلفن:</label>
                             </div>
                             <div>
-                                <input class="text-[13px] border-[1px] w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('leader-phone') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="phone" name="leader-phone"  value="{{ old('leader-phone') }}">
+                                <input class="text-[13px] border-[1px] w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('leader-phone') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="phone" name="leader-phone"  value="{{ old('leader-phone') }}" oninput="validateEnglishNumber(this)">
+                                <div class="text-red-500 iransans-normal hidden text-[10px] mt-1" id="errorMessage">از اعداد انگلیسی استفاده کنید.</div>
                                 @error('leader-phone')
-                                    <span class="text-[10px] text-red-500">{{ $message }}</span>
+                                    <span class="text-[10px] text-red-500 iransans-normal">{{ $message }}</span>
                                 @enderror
                             </div>    
                         </div>  
@@ -201,4 +210,24 @@
 
 @push('scripts')
     @vite('resources/js/datepicker.js')
+    <script>
+        function validateEnglishNumber(input) {
+            var englishNumberPattern = /^[0-9]*$/;
+
+            if (!englishNumberPattern.test(input.value)) {
+                // Show error message
+                document.getElementById('errorMessage').classList.remove('hidden');
+                document.getElementById('errorMessage').classList.add('block');
+                input.value = '';
+                
+            } else {
+                // Hide error message
+                document.getElementById('errorMessage').classList.remove('block');
+                document.getElementById('errorMessage').classList.add('hidden');
+                
+                
+                
+            }
+        }
+    </script>
 @endpush

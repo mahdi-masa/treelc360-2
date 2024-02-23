@@ -49,22 +49,22 @@
         <div class="flex flex-row mobile:justify-between mobile:max-w-[400px] pc:max-w-none tablet:max-w-none pc:justify-evenly mx-auto items-center my-5">
             <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">هسته‌های خود‌جوش</span>
-                <div>
-                    <span class="mobile:text-[13px] text-[#009245] sansnum-normal" id="squads">0</span>
+                <div id="squads">
+                    
                     <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">گروه</span>
                 </div>
             </div>
             <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">آبادگران زمین</span>
-                <div>
-                    <span class="mobile:text-[13px] text-[#009245] sansnum-normal" id="members">0</span>
+                <div id="members">
+                    
                     <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">نفر</span>
                 </div>
             </div>
             <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">درختان اهدا شده به زمین</span>
-                <div>
-                    <span class="me-1 mobile:text-[13px] text-[#009245] sansnum-normal" id="trees">0</span>
+                <div id="trees">
+                   
                     <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">عدد</span>
                 </div>
             </div>

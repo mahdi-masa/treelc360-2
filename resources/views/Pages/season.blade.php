@@ -56,20 +56,13 @@
                 </div>
                 <div class="flex flex-col pc:w-3/4 pc:mx-auto">
                     <div class="tablet:flex tablet:felx-row tablet:justify-around">
-                        <div class="w-1/3 mx-auto">
-                            <a href="{{route("motherseeder")}}">
-                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/motherseeder.png" alt="">
-                            </a>
-                            <a href="{{route("motherseeder")}}">
-                                <p class="text-black text-center iransans-600 my-5">نذر سبز مادری</p>
-                            </a>
-                        </div>
+                        
 
                         <div class="w-1/3 mx-auto">
-                            <a href="#">
+                            <a href="{{ route('campain') }}">
                                 <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/layouts/landing/sessionhistory.svg" alt="">
                             </a>
-                            <a href="#">
+                            <a href="{{ route('campain') }}">
                                 <p class="text-black text-center iransans-600 my-5">پویش خود را ثبت کن</p>
                             </a>
                         </div>
@@ -102,7 +95,7 @@
                     <div class="tablet:flex tablet:felx-row tablet:justify-around">
                         <div class="w-1/2 mx-auto">
                             <a href="{{route("seeder")}}">
-                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/sowing-season-2.svg" alt="">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/sowing-season-gray.svg" alt="">
                             </a>
                             <a href="{{route("seeder")}}">
                                 <p class="text-black text-center iransans-600 my-5">۳. فصل بذرکاری</p>
@@ -146,6 +139,14 @@
                             </a>
                             <a href="{{route("palestine")}}">
                                 <p class="text-black text-center iransans-600 my-5">صبح زیتون</p>
+                            </a>
+                        </div>
+                        <div class="w-1/3 mx-auto">
+                            <a href="{{route("motherseeder")}}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/motherseeder-gray.png" alt="">
+                            </a>
+                            <a href="{{route("motherseeder")}}">
+                                <p class="text-black text-center iransans-600 my-5">نذر سبز مادری</p>
                             </a>
                         </div>
 

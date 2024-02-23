@@ -38,25 +38,25 @@
         </div>
         <div class="flex flex-row justify-between items-center my-5">
             <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span>آبادگران زمین</span>
-                <div class="flex flex-row justify-center items-center">
-                    <span class=" sansnum-300" id="members">0</span>
-                    <span class="mr-1">نفر</span>
-                </div>
-                
-            </div>
-            <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span>هسته‌های خود‌جوش</span>
-                <div class="flex flex-row justify-center items-center">
-                    <span class="sansnum-300" id="squads">0</span>
-                    <span class="mr-1">عدد</span>
+                <span class="mobile:text-[13px]">هسته‌های خود‌جوش</span>
+                <div id="squads">
+                    
+                    <span class="mobile:text-[13px]">عدد</span>
                 </div>
             </div>
             <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
-                <span>درختان اهدا شده به زمین</span>
-                <div class="flex flex-row justify-center items-center">
-                    <span class="sansnum-300" id="trees">0</span>
-                    <span class="mr-1">عدد</span>
+                <span class="mobile:text-[13px]">آبادگران زمین</span>
+                <div id="members">
+                    
+                    <span class="mobile:text-[13px]">نفر</span>
+                </div>
+            </div>
+            <div class="iransans-bold mx-5 flex flex-col justify-center items-center">
+                <span class="mobile:text-[13px]">درختان اهدا شده به زمین</span>
+                <div id="trees">
+                    
+                    <span class="mobile:text-[13px]">عدد</span>
+
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@
     
     @push('scripts')
     @vite('resources/js/map.js')
-    @vite('resources/js/statistic.js')
+    @vite('resources/js/stat2.js')
     
     
     @endpush
