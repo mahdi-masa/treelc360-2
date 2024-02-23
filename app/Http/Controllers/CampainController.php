@@ -43,6 +43,7 @@ class CampainController extends Controller
             // Create campaign
             DB::table('campain')->insert([
                 'campain-name' => $data['campain-name'],
+                'campain-purpose' => $data['campain-purpose'] ?? null,
                 'leader-firstname' => $data['leader-firstname'],
                 'leader-lastname' => $data['leader-lastname'],
                 'leader-phone' => $data['leader-phone'],

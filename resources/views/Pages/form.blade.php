@@ -68,8 +68,20 @@
                                     <label class="iransans-normal text-[13px] text-[#94a3b8]" for="campain-name">نام پویش:</label>
                                 </div>
                                 <div>
-                                    <input class="text-[13px] iransans-normal border-[1px] rounded-[8px] w-full h-[40px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('name') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-name" name="campain-name" value="{{ old('campain-name')}}">
+                                    <input class="text-[13px] iransans-normal border-[1px] rounded-[8px] w-full h-[40px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('campain-name') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-name" name="campain-name" value="{{ old('campain-name')}}">
                                     @error('campain-name')
+                                        <span class="text-[10px] text-red-500">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="pc:w-1/3 mobile:w-full mx-[20px]">
+                                <div>
+                                    <label class="iransans-normal text-[13px] text-[#94a3b8]" for="campain-purpose">هدف پویش:</label>
+                                </div>
+                                <div>
+                                    <input class="text-[13px] iransans-normal border-[1px] rounded-[8px] w-full h-[40px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('campain-purpose') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-purpose" name="campain-purpose" value="{{ old('campain-purpose')}}">
+                                    @error('campain-purpose')
                                         <span class="text-[10px] text-red-500">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -107,7 +119,7 @@
                             <div class="flex mobile:flex-col pc:flex-row justify-center items-center w-full">
                                 <div class="pc:w-1/3 mobile:w-full">
                                     <div>
-                                        <label class="iransans-normal text-[13px] text-[#94a3b8]" for="campain-location">محدوده پویش:</label>
+                                        <label class="iransans-normal text-[13px] text-[#94a3b8]" for="campain-location">محدوده جغرافیایی پویش:</label>
                                     </div>
                                     <div>
                                         <input class="text-[13px] iransans-normal border-[1px] w-full h-[40px] rounded-[8px] mt-[3px] ps-[4px] pb-[4px] focus:outline-dashed outline-1 outline-offset-1 focus:outline-[#cbd5e1] outline-white transition-all duration-300 ease-linear @error('geometry-location') border-red-500 @else border-[#cbd5e1] @enderror" type="text" id="campain-location" name="geometry-location" value="{{ old('geometry-location') }}">

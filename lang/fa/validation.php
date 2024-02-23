@@ -177,6 +177,7 @@ return [
     |
     */
     'attributes' => [
+        'campain-purpose' => 'هدف پویش',
         'start-date' => 'تاریخ شروع ',
         'finish-date' => 'تاریخ پایان',
         'description' => 'توضیحات',
