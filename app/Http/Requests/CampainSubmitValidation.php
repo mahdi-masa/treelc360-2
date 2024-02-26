@@ -27,7 +27,7 @@ class CampainSubmitValidation extends FormRequest
             'leader-phone' => 'required|phone:IR',
             'description' => 'nullable|string',
             'campain-name' => 'required|string|max:30',
-            'campain-purpose' => 'required|string|max:30',
+            'campain-purpose' => 'nullable|string|max:30',
             'start-date' => 'nullable|date_format:Y/m/d|required_with:finish-date',
             'finish-date' => 'nullable|date_format:Y/m/d|required_with:start-date|after:start-date',
             'geometry-location' => 'nullable|string|max:70',

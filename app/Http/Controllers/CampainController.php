@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Exception;
+use Carbon\Carbon;
 use App\Http\Requests\CampainSubmitValidation;
 use App\Models\Campain;
 use Dflydev\DotAccessData\Data;
@@ -52,9 +53,11 @@ class CampainController extends Controller
                 'finish-date' => $data['finish-date'] ?? null,
                 'geometry-location' => $data['geometry-location'] ?? null,
                 'poster-slug' => $filename ?? null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
             ]);
 
-            //Send SMS notifications
+            // Send SMS notifications
             $patternValues = [
                 "name" => $data['leader-firstname'],
                 "family" => $data['leader-lastname'],
