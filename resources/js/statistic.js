@@ -28,7 +28,7 @@ function appendSpan(id, finalValue) {
     for (let i = valueLength; i >= 1; i--) {
         const spanElement = document.createElement('span');
         spanElement.id = `${id}[${i}]`;
-        spanElement.className = 'mobile:text-[13px] text-[#009245] sansnum-normal';
+        spanElement.className = 'mobile:text-[13px] text-[#009245] sansnum-bold';
         if (i === 1) {
             spanElement.classList.add('me-1');
         }
