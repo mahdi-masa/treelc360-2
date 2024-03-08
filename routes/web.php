@@ -48,14 +48,6 @@ Route::get('/hosseinplant', function () {
     return view('Pages/sign-of-hossein');
 })->name('hosseinplant');
 
-Route::get('/forms/profile', function () {
-    return view('Pages/profileForm');
-})->name('profileForm');
-
-Route::get('/forms/plant', function () {
-    return view('Pages/plantForm');
-})->name('plantForm');
-
 Route::get('/cutting-season', function () {
     return view('Pages/cutting-season');
 })->name('cutting-season');
