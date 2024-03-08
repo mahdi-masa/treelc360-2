@@ -44,16 +44,20 @@
             <div class="max-w-[500px] mx-auto">
                 <h1 class="iransans-bold text-[18px] text-center">بسم الله الرحمن الرحیم</h1>    
             </div>
-            <div class="w-full max-w-[1280px] mx-auto">
-                <p class="text-justify iransans-200">
+            <div class="w-full max-w-[1280px] mx-auto mt-[40px]">
+                <p class="text-start iransans-400 text-[16px]">
                     یک کنش جمعی، عملیات یا فعالیت اجتماعی با هدف گسترش پوشش گیاهی، طراحی کن!
+                </p>
+                <p class="text-justify iransans-400 text-[16px]">
                     یعنی با یک برنامهٔ مشخص تلاش کن دیگران را برای کاشت، داشت و بهره‌برداری اصولی از درختان و گیاهان به میدان عمل بیاوری و در یک نقطهٔ جغرافیایی مشخص یا در کل ایران اسلامی، عامل سرسبزی و احیای سرزمین باشی.
+                </p>
+                <p class="text-start iransans-400 text-[16px]">
                     پس با ثبت مشخصات این پویش جدید، گام اول را در تحقق اهداف و برنامه‌های خود بردار:
                 </p>
             </div>
         </div>
     
-        <div class="bg-white mobile:max-w-[90%] pc:max-w-[576px] tablet:max-w-[576px] mt-[32px] mx-auto rounded-[12px] border-[1px] drop-shadow">
+        <div class="bg-white mobile:max-w-[90%] pc:max-w-[576px] tablet:max-w-[576px] mt-[56px] mb-[40px] mx-auto rounded-[12px] border-[1px] drop-shadow">
             <div class="pt-[12px] m-2">
                 <div class="mx-auto">
                     <p class="iransans-bold text-[15px]">مشخصات پویش</p>

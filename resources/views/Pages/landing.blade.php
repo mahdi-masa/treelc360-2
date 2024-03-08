@@ -47,25 +47,25 @@
             </div>
         </div>
         <div class="flex flex-row mobile:justify-between mobile:max-w-[400px] pc:max-w-none tablet:max-w-none pc:justify-evenly mx-auto items-center my-5">
-            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+            <div class="iransans-600 mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">هسته‌های خود‌جوش</span>
-                <div id="squads">
+                <div id="squads" class="iransans-800 sansnum-800">
                     
-                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">گروه</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px] iransans-600">گروه</span>
                 </div>
             </div>
-            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+            <div class="iransans-600 mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">آبادگران زمین</span>
-                <div id="members">
+                <div id="members" class="iransans-800 sansnum-800">
                     
-                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">نفر</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px] iransans-600">نفر</span>
                 </div>
             </div>
-            <div class="iransans-bold mobile:mx-[4px] flex flex-col justify-center items-center">
+            <div class="iransans-600 mobile:mx-[4px] flex flex-col justify-center items-center">
                 <span class="mobile:text-[13px] pc:text-[15px] text-[#009245]">درختان اهدا شده به زمین</span>
-                <div id="trees">
+                <div id="trees" class="iransans-800 sansnum-800">
                    
-                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px]">عدد</span>
+                    <span class="mobile:text-[13px] text-[#009245] pc:text-[15px] iransans-600">عدد</span>
                 </div>
             </div>
         </div>
