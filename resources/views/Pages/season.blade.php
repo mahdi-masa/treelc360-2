@@ -58,12 +58,20 @@
                     <div class="tablet:flex tablet:felx-row tablet:justify-around">
                         
 
-                        <div class="w-1/3 mx-auto">
+                        <div class="w-1/2 mx-auto">
                             <a href="{{ route('campain') }}">
                                 <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/layouts/landing/sessionhistory.svg" alt="">
                             </a>
                             <a href="{{ route('campain') }}">
                                 <p class="text-black text-center iransans-600 my-5">پویش خود را ثبت کن</p>
+                            </a>
+                        </div>
+                        <div class="w-1/2 mx-auto">
+                            <a href="{{route("palestine")}}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="/assets/pages/sessions/palestain.png" alt="">
+                            </a>
+                            <a href="{{route("palestine")}}">
+                                <p class="text-black text-center iransans-600 my-5">صبح زیتون</p>
                             </a>
                         </div>
                     </div>
@@ -133,15 +141,8 @@
                 </div>
                 <div class="flex flex-col pc:w-3/4 pc:mx-auto">
                     <div class="tablet:flex tablet:felx-row tablet:justify-around">
-                        <div class="w-1/3 mx-auto">
-                            <a href="{{route("palestine")}}">
-                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="/assets/pages/sessions/palestine-gray.png" alt="">
-                            </a>
-                            <a href="{{route("palestine")}}">
-                                <p class="text-black text-center iransans-600 my-5">صبح زیتون</p>
-                            </a>
-                        </div>
-                        <div class="w-1/3 mx-auto">
+                        
+                        <div class="w-1/2 mx-auto">
                             <a href="{{route("motherseeder")}}">
                                 <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/motherseeder-gray.png" alt="">
                             </a>
@@ -150,7 +151,7 @@
                             </a>
                         </div>
 
-                        <div class="w-1/3 mx-auto">
+                        <div class="w-1/2 mx-auto">
                             <a href="{{route("hosseinplant")}}">
                                 <img class="mobile:w-[150px] tablet:w-[85px] mx-auto" src="/assets/pages/sessions/plans.png" alt="">
                             </a>
@@ -161,6 +162,7 @@
                     </div>
                 </div>
             </div>
+            
             {{-- end third section in the page --}} 
         </div>
     </main>    

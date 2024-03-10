@@ -29,7 +29,8 @@
                 هر زمان تصمیم به کاشتن گرفتی، نهال‌های بلند، قطور و با ریشه‌های انبوه را انتخاب کن.     
             </p> 
             <p class="p-2 text-justify iransans-500 text-[16px]">
-                برای انجام عملیات نهال کاری، نخست مشخصات خود را جهت انسجام هر چه بیشتر این نهضت در همین <span><a class="text-red-600 no-underline" href="https://forms.lc360.ir/forms/profile">سامانه</a></span> ثبت کن؛ سپس کتابچۀ زیر را دانلود کرده و با دقت مطالعه کن:</p>  
+                برای انجام عملیات نهال کاری، نخست مشخصات خود را جهت انسجام هر چه بیشتر این نهضت در همین <span><a class="text-red-600 no-underline" href="https://forms.lc360.ir/forms/profile">سامانه</a></span> ثبت کن؛ سپس کتابچۀ زیر را دانلود کرده و با دقت مطالعه کن:
+            </p>  
         </div>
         
         <hr class="text-black w-1/2 mx-auto my-8 font-semibold">
