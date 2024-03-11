@@ -36,7 +36,7 @@ class CampainController extends Controller
                 $currentYear = Jalalian::now()->format('Y');
                 $currentMonth = Jalalian::now()->format('m');
                 $file = $request->file('campain-poster');
-                $filename = 'پویش ها'.'/'.$currentYear.'/'.$currentMonth.'/'.$data['campain-name'].$file->getClientOriginalExtension();
+                $filename = 'campains'.'/'.$currentYear.'/'.$currentMonth.'/'.$data['campain-name'].'.'.$file->getClientOriginalExtension();
                 Storage::disk('s3')->put($filename, file_get_contents($file));
             }
             

@@ -1,7 +1,7 @@
 @extends('layouts.main', ['footer'=> true])
 
 @section('tab_title')
-    نهضت درخت | کتابچه‌ها
+    نهضت درخت | صبح زیتون
 @endsection
 
 @section('styles')
@@ -71,7 +71,7 @@
             <div class="w-3/4 mx-auto my-8 flex flex-col justify-center content-center">
                 <div class="flex mobile:flex-col tablet:flex-row justify-center content-center mt-10">
                     <div class="flex flex-col justify-center content-center text-center">
-                        <img loading="lazy" class="w-80 mx-auto rounded-[8px]" src="./assets/pages/palestine/rahbarPoster.jpg" alt="">
+                        <img loading="lazy" class="w-80 mx-auto rounded-[8px]" src="./assets/pages/palestine/thumbnail.jpg" alt="">
                         <p class="iransans-500 text-[15px] mt-5">پوستر سلام بر فسطین سرزمین زیتون و مقاومت</p>
                         <a class="bg-[#61ce70] px-8 p-1 iransans-500 rounded text-white mt-5 w-fit mx-auto text-[15px]" href="./assets/pages/palestine/rahbarPoster.jpg">دریافت محتوا</a>
                     </div>

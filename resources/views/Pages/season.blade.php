@@ -57,15 +57,15 @@
                 <div class="flex flex-col pc:w-3/4 pc:mx-auto">
                     <div class="tablet:flex tablet:felx-row tablet:justify-around">
                         
-
                         <div class="w-1/2 mx-auto">
-                            <a href="{{ route('campain') }}">
-                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/layouts/landing/sessionhistory.svg" alt="">
+                            <a href="{{ route('darekona') }}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/pages/darekona/darekona-logo.png" alt="">
                             </a>
-                            <a href="{{ route('campain') }}">
-                                <p class="text-black text-center iransans-600 my-5">پویش خود را ثبت کن</p>
+                            <a href="{{ route('darekona') }}">
+                                <p class="text-black text-center iransans-600 my-5">دارکنا</p>
                             </a>
                         </div>
+                        
                         <div class="w-1/2 mx-auto">
                             <a href="{{route("palestine")}}">
                                 <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="/assets/pages/sessions/palestain.png" alt="">
@@ -74,6 +74,41 @@
                                 <p class="text-black text-center iransans-600 my-5">صبح زیتون</p>
                             </a>
                         </div>
+                    </div>
+
+                    <div class="tablet:flex tablet:felx-row tablet:justify-around">
+                        
+
+                        <div class="w-1/2 mx-auto">
+                            <a href="{{ route('hera') }}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/pages/hera/hera-logo.png" alt="">
+                            </a>
+                            <a href="{{ route('hera') }}">
+                                <p class="text-black text-center iransans-600 my-5">حرا</p>
+                            </a>
+                        </div>
+                        <div class="w-1/2 mx-auto">
+                            <a href="{{route("iranbehesht")}}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="/assets/pages/iranbehesht/iranbehesht-logo.png" alt="">
+                            </a>
+                            <a href="{{route("iranbehesht")}}">
+                                <p class="text-black text-center iransans-600 my-5">ایران بهشت</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tablet:flex tablet:felx-row tablet:justify-around">
+                        
+                        <div class="w-1/2 mx-auto">
+                            <a href="{{ route('campain') }}">
+                                <img class="mobile:w-[150px] tablet:w-[85px] mx-auto rounded-[50%]" src="assets/layouts/landing/sessionhistory.svg" alt="">
+                            </a>
+                            <a href="{{ route('campain') }}">
+                                <p class="text-black text-center iransans-600 my-5">پویش خود را ثبت کن</p>
+                            </a>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>

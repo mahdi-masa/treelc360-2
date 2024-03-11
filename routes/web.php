@@ -52,6 +52,18 @@ Route::get('/cutting-season', function () {
     return view('Pages/cutting-season');
 })->name('cutting-season');
 
+Route::get('/iranbehesht', function () {
+    return view('Pages/iranbehest');
+})->name('iranbehesht');
+
+Route::get('/darekona', function () {
+    return view('Pages/darekona');
+})->name('darekona');
+
+Route::get('/hera', function () {
+    return view('Pages/hera');
+})->name('hera');
+
 
 
 Route::get('/campain', function () {
